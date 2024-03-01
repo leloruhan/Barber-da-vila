@@ -438,7 +438,6 @@ footer a:hover {
 /* Responsividade */
 
 @media (max-width: 768px) {
-
     header nav,
     .texto-banner,
     .sobre .equipe,
@@ -450,12 +449,72 @@ footer a:hover {
         width: 100%;
     }
 
-    .sobre p,
-    .servicos li,
-    .portfolio li {
-        text-align: left;
+    header nav a {
+        margin: 10px 0;
+        font-size: 16px;
     }
 
+    .carousel img,
+    .equipe img,
+    .servicos li img,
+    .portfolio li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contato form {
+        width: 100%;
+    }
+
+    .sobre,
+    .servicos,
+    .portfolio,
+    .endereco,
+    .contato {
+        padding: 20px; /* Adapte o espaçamento conforme necessário */
+    }
+
+    .sobre h2,
+    .servicos h2,
+    .portfolio h2,
+    .endereco h2,
+    .contato h2 {
+        font-size: 24px;
+    }
+
+    .sobre p,
+    .servicos li,
+    .portfolio li,
+    .endereco p {
+        font-size: 16px;
+    }
+
+    .servicos ul,
+    .portfolio ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicos li,
+    .portfolio li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .servicos li img,
+    .portfolio li img {
+        width: 80%; /* Adapte o tamanho conforme necessário */
+        max-width: 300px; /* Defina um tamanho máximo para evitar que as imagens fiquem muito grandes */
+    }
+
+    .contato form {
+        width: 100%;
+    }
+
+    .contato .mapa {
+        height: 200px; /* Ajuste conforme necessário */
+    }
 }
 
 /* Centralização Geral */
